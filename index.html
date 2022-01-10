@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<title>Computer Information Systems</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
+.w3-bar-block .w3-bar-item {padding:20px}
+#more {display: none;}
+body {background-color: aqua;}
+</style>
+<body>
+
+<!-- Sidebar (hidden by default) -->
+<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()"
+  class="w3-bar-item w3-button">Close Menu</a>
+  <a href="#food" onclick="w3_close()" class="w3-bar-item w3-button">Contact</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">About</a>
+</nav>
+
+<!-- Top menu -->
+<div class="w3-top">
+  <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
+    <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
+    <div class="w3-right w3-padding-16">Contact</div>
+    <div class="w3-center w3-padding-16">My Blog</div>
+  </div>
+</div>
+
+
+  
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+    <div class="w3-quarter">
+      <img src="images/images (1).jfif" alt="" style="width:100%">
+      <h3>10-Generation Five</h3>
+      <p><a href="https://michaelgarcia2021.github.io/generationfive/">Learn more..</a></p>      
+    </div>
+    <div class="w3-quarter">
+      <video width="250" controls>
+        <source src="mov_bbb.mp4" type="video/mp4">
+        <source src="mov_bbb.ogg" type="video/ogg">
+        Your browser does not support HTML video.
+      </video>      
+      <h3>02- How the Internet Works</h3>
+      <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="images/graphicscards2019-blogroll-1554499813756_160w.jpg" alt="Sandwich" style="width:100%">
+      <h3>01-Computer System Components</h3>
+      <p>Graphics Card</p>
+    
+    </div>
+    <div class="w3-quarter">
+      <img src="images/download.jfif" alt="" style="width:100%">
+      <h3>THE INTERNET: 90s VS 2020</h3>
+       
+    </div>
+  </div>
+  
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center">
+    <div class="w3-quarter">
+      <img src="images/computer-hardware-2625895-5d9007ac0d44404588321d255fc82049.jpg" alt="Popsicle" style="width:100%">
+      <h3>03-Computer Hardware Computer Comparison</h3>
+    </div>
+    <div class="w3-quarter">
+      <img
+      src="https://media1.giphy.com/media/citBl9yPwnUOs/giphy.gif?cid=ecf05e47y881ggkjbsftyedr9n1ikpngkcn0r28457k9cd2y&rid=giphy.gif&ct=g"alt="giphy" style="width:100%">
+      <h3>05- System Software How Does A Computer Work?</h3> 
+    </div>
+    <div class="w3-quarter">
+      <img src="images/C9JgcUxXgn69Jz3dYdDNzg.jpg" alt="Sandwich" style="width:100%">
+      <h3>06-Computer Network Fundamentals</h3>
+      
+    </div>
+    <div class="w3-quarter">
+      <img src="images/iStock-512328734-1382x920.jpg" alt="Croissant" style="width:100%">
+      <h3>How To Protect Your Information!</h3>
+    </div>
+  </div>
+</body>
+  
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+
+
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+
+
+
+</script>
+
+</body>
+</html>
